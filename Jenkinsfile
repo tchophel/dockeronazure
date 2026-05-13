@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = "msmengr/demo-app:latest"
+        IMAGE = "11104002818/demo-app:latest"
         SSH_USER = "azureuser"
         SSH_HOST = "20.81.45.129"
     }
@@ -11,7 +11,7 @@ pipeline {
 
         stage("Checkout") {
             steps {
-                sh 'git clone https://github.com/Mudassir-dev0ps/dockeronazure'
+                sh 'git clone https://github.com/tchophel/dockeronazure'
             }
         }
 
